@@ -19,7 +19,7 @@ class CreateStudentsTable extends Migration
             $table->integer('idade')->unsigned();
             $table->string('email')->unique();
             $table->string('cpf')->unique();
-            $table->string('telefone');
+            $table->string('telefone'); /*Com DDD*/
             $table->string('boletim')->nullable();
             $table->softDeletes();
             $table->timestamps();

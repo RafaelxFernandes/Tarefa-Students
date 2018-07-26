@@ -17,4 +17,6 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 
+/*StudentController*/
 Route::resource('students', 'StudentController');
+Route::get('/students/{id}', 'StudentController@download');
