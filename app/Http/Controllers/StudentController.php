@@ -140,8 +140,9 @@ class StudentController extends Controller
         return response()->json('Estudante deletado com sucesso!');
     }
 
-    public function download(Student $student)
+    public function download($id)
     {
+        $student = Student::find($id);
         $filePath = storage_path('app/localDocs/'.$student->boletim);
         return response()->download($filePath, $student->boletim);   
     }

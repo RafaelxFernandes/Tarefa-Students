@@ -19,4 +19,4 @@ use Illuminate\Http\Request;
 
 /*StudentController*/
 Route::resource('students', 'StudentController');
-Route::get('/students/{id}', 'StudentController@download');
+Route::get('/students-download/{id}', 'StudentController@download');
